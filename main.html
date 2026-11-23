@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notre Plaisir — Pâtisserie &amp; Cake Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#accueil" class="logo">A.P.E patisserie</a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Ouvrir le menu">
+            <label for="nav-toggle" class="nav-burger" aria-hidden="true"><span></span></label>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#offres">Offres & réductions</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#nouveautes">Nouveautés</a></li>
+                    <li><a href="#contact" class="btn-nav">Contactez-nous</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ################ SITE PRINCIPAL : 5 sections affichées l'une sous l'autre (défilement) ################ -->
+    <div id="site-principal">
+
+    <!-- ================= SECTION : Accueil ================= -->
+    <section class="block" id="accueil" data-title="Accueil">
+    <section class="hero">
+        <div class="container hero-content">
+            <span class="subtitle">La pâtisserie selon vos envies</span>
+            <h1>Imaginez-la. Choisissez-la. Savourez-la.</h1>
+            <p>Des douceurs traditionnelles aux créations modernes, chaque pâtisserie prend vie selon vos envies.</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn-primary">Découvrir le menu</a>
+                <a href="#contact" class="btn-secondary">Devis sur-mesure</a>
+            </div>
+        </div>
+    </section>
+    <section class="section bg-light">
+        <div class="container about-grid"> 
+            <div class="about-text">
+                <span class="subtitle">Notre philosophie</span>
+                <h2>La tradition inspire, votre imagination crée</h2>
+                <p>Chez A.P.E Pâtisserie, nous croyons que chaque gourmandise raconte une histoire. Entre recettes traditionnelles et créations modernes, nous vous offrons la liberté de choisir, de personnaliser et d'imaginer des pâtisseries qui correspondent à vos goûts et à vos envies.</p>
+                <ul class="features-list">
+                    <li>✓ Un mariage entre tradition et modernité</li>
+                    <li>✓ Des saveurs et des créations pour tous les goûts</li>
+                    <li>✓ Votre imagination au cœur de chaque réalisation</li>
+                </ul>
+            </div>
+            <div class="media about-media">
+                    <!-- Remplacez le <span> par : <img src="images/atelier.jpg" alt="L'atelier Notre Plaisir"> -->
+                    <img src="les images/Élégance en pâtisserie raffinée.png" alt="">
+                </div>
+        </div>
+    </section>
+
+    
+    </section>
+
+    <!-- ================= SECTION : Offres & réductions ================= -->
+    <section class="block" id="offres" data-title="Offres &amp; réductions">
+    <section class="page-hero">
+        <div class="container">
+            
+            <h1>Offres &amp; réductions</h1>
+            <p>Nos promotions du moment. Les conditions exactes sont précisées lors de votre commande.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="grid-2">
+                <article class="card offer-card">
+                    <div class="media ">
+                    <!-- Remplacez le <span> par : <img src="images/offre-1.jpg" alt="Première commande"> -->
+                    <span class="media-label">Image Première commande</span>
+                </div>
+                    <div class="card-body">
+                        <span class="badge">-10 %</span>
+                        <h3>Première commande</h3>
+                        <p>10 % de réduction sur votre première commande de gâteau personnalisé.</p>
+                        <a href="#contact" class="card-link">Profiter de l'offre</a>
+                    </div>
+                </article>
+                <article class="card offer-card">
+                    <div class="media ">
+                    <!-- Remplacez le <span> par : <img src="images/offre-2.jpg" alt="Gâteau + cupcakes"> -->
+                    <span class="media-label">Image Gâteau + cupcakes</span>
+                </div>
+                    <div class="card-body">
+                        <span class="badge">Pack anniversaire</span>
+                        <h3>Gâteau + cupcakes</h3>
+                        <p>Un gâteau personnalisé accompagné d'une boîte de cupcakes assortis à prix réduit.</p>
+                        <a href="#contact" class="card-link">Profiter de l'offre</a>
+                    </div>
+                </article>
+                <article class="card offer-card">
+                    <div class="media ">
+                    <!-- Remplacez le <span> par : <img src="images/offre-3.jpg" alt="Pâtisserie marocaine"> -->
+                    <span class="media-label">Image Pâtisserie marocaine</span>
+                </div>
+                    <div class="card-body">
+                        <span class="badge">Coffret fêtes</span>
+                        <h3>Pâtisserie marocaine</h3>
+                        <p>Plateau de pâtisseries marocaines pour l'Aïd et les réceptions : tarif spécial à partir d'un certain nombre de pièces.</p>
+                        <a href="#contact" class="card-link">Profiter de l'offre</a>
+                    </div>
+                </article>
+                <article class="card offer-card">
+                    <div class="media ">
+                    <!-- Remplacez le <span> par : <img src="images/offre-4.jpg" alt="Mariages &amp; événements"> -->
+                    <span class="media-label">Image Mariages &amp; événements</span>
+                </div>
+                    <div class="card-body">
+                        <span class="badge">Sur devis</span>
+                        <h3>Mariages &amp; événements</h3>
+                        <p>Une remise sur devis pour les commandes de grande taille : mariages, réceptions et événements d'entreprise.</p>
+                        <a href="#contact" class="card-link">Profiter de l'offre</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    
+    </section>
+
+    <!-- ================= SECTION : Menu ================= -->
+    <section class="block" id="menu" data-title="Menu">
+    <section class="page-hero">
+        <div class="container">
+            
+            <h1>Notre menu</h1>
+            <p>Choisissez une catégorie pour découvrir tous les produits.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="grid-3">
+                <a href="#gateaux" class="card card-link-block">
+                    <div class="media ">
+                    <!-- Remplacez le <span> par : <img src="images/menu-gateaux.jpg" alt="Les gâteaux"> -->
+                    <span class="media-label">Image Les gâteaux</span>
+                </div>
+                    <div class="card-body">
+                        <h3>Les gâteaux</h3>
+                        <p>Gâteaux personnalisés, gâteaux d'événements et nos propres créations.</p>
+                        <span class="card-link">Voir les produits</span>
+                    </div>
+                </a>
+                <a href="#patisserie-marocaine" class="card card-link-block">
+                    <div class="media ">
+                    <img src="les images/menu2.png" alt="">
+                </div>
+                    <div class="card-body">
+                        <h3>Pâtisserie traditionnelle marocaine</h3>
+                        <p>Cornes de gazelle, chebakia, ghriba… les saveurs du patrimoine, faites maison.</p>
+                        <span class="card-link">Voir les produits</span>
+                    </div>
+                </a>
+                <a href="#douceurs-delices" class="card card-link-block">
+                    <div class="media ">
+                    <img src="les images/menu3.png" alt="">
+                </div>
+                    <div class="card-body">
+                        <h3>Douceurs &amp; Délices</h3>
+                        <p>Cupcakes, cheesecakes et macarons : des douceurs à partager ou à offrir.</p>
+                        <span class="card-link">Voir les produits</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    
+    </section>
+
+    <!-- ================= SECTION : Nouveautés ================= -->
+    <section class="block" id="nouveautes" data-title="Nouveautés">
+    <section class="page-hero">
+        <div class="container">
+            
+            <h1>Les nouveautés du menu</h1>
+            <p>Découvrez nos dernières créations.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="grid-2">
+                <article class="card offer-card">
+                    <div class="media ">
+                    <!-- Remplacez le <span> par : <img src="images/nouveaute-1.jpg" alt="Cheesecake pistache-framboise"> -->
+                    <span class="media-label">Image Cheesecake pistache-framboise</span>
+                </div>
+                    <div class="card-body">
+                        <span class="badge">Nouveau</span>
+                        <h3>Cheesecake pistache-framboise</h3>
+                        <p>Une crème onctueuse à la pistache, un cœur de framboise et un fond sablé.</p>
+                        <a href="#contact" class="card-link">Commander</a>
+                    </div>
+                </article>
+                <article class="card offer-card">
+                    <div class="media ">
+                    <!-- Remplacez le <span> par : <img src="images/nouveaute-2.jpg" alt="Naked cake aux fruits frais"> -->
+                    <span class="media-label">Image Naked cake aux fruits frais</span>
+                </div>
+                    <div class="card-body">
+                        <span class="badge">Nouveau</span>
+                        <h3>Naked cake aux fruits frais</h3>
+                        <p>Notre naked cake léger, décoré de fruits frais de saison.</p>
+                        <a href="#contact" class="card-link">Commander</a>
+                    </div>
+                </article>
+                <article class="card offer-card">
+                    <div class="media ">
+                    <!-- Remplacez le <span> par : <img src="images/nouveaute-3.jpg" alt="Coffret de pâtisseries marocaines revisitées"> -->
+                    <span class="media-label">Image Coffret de pâtisseries marocaines revisitées</span>
+                </div>
+                    <div class="card-body">
+                        <span class="badge">Nouveau</span>
+                        <h3>Coffret de pâtisseries marocaines revisitées</h3>
+                        <p>Les classiques du patrimoine dans un coffret à offrir.</p>
+                        <a href="#contact" class="card-link">Commander</a>
+                    </div>
+                </article>
+                <article class="card offer-card">
+                    <div class="media ">
+                    <!-- Remplacez le <span> par : <img src="images/nouveaute-4.jpg" alt="Cupcakes de saison"> -->
+                    <span class="media-label">Image Cupcakes de saison</span>
+                </div>
+                    <div class="card-body">
+                        <span class="badge">Nouveau</span>
+                        <h3>Cupcakes de saison</h3>
+                        <p>Une recette différente chaque saison, selon les fruits du moment.</p>
+                        <a href="#contact" class="card-link">Commander</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    
+    </section>
+
+    <!-- ================= SECTION : Contactez-nous ================= -->
+    <section class="block" id="contact" data-title="Contactez-nous">
+    <section class="page-hero">
+        <div class="container">
+            
+            <h1>Contactez-nous</h1>
+            <p>Une question, un devis, une commande sur-mesure ? Écrivez-nous.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container contact-grid">
+            <div class="contact-info">
+                <h2>Nos coordonnées</h2>
+                <p><strong>Téléphone :</strong> +212 6 00 00 00 00</p>
+                <p><strong>Email :</strong> contact@exemple.ma</p>
+                <p><strong>Adresse :</strong> Votre adresse, Maroc</p>
+                <p><strong>Horaires :</strong> Du lundi au samedi, 9h – 19h</p>
+                <p class="note">Pour un gâteau personnalisé, pensez à commander quelques jours à l'avance.</p>
+            </div>
+            <form class="contact-form" action="mailto:contact@exemple.ma" method="post" enctype="text/plain">
+                <label for="nom">Nom complet</label>
+                <input type="text" id="nom" name="nom" required>
+
+                <label for="tel">Téléphone</label>
+                <input type="tel" id="tel" name="telephone">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="type">Type de demande</label>
+                <select id="type" name="type">
+                    <option>Les gâteaux</option>
+                    <option>Pâtisserie marocaine</option>
+                    <option>Douceurs &amp; Délices</option>
+                    <option>Autre</option>
+                </select>
+
+                <label for="date">Date souhaitée</label>
+                <input type="date" id="date" name="date">
+
+                <label for="message">Votre message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit" class="btn-primary">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    
+    </section>
+
+    </div>
+
+    <!-- ################ PAGES PRODUITS : affichées seulement au clic sur une carte du menu ################ -->
+
+    <!-- ================= PAGE : Les gâteaux ================= -->
+    <main class="page" id="page-gateaux" data-title="Les gâteaux">
+    <section class="page-hero">
+        <div class="container">
+            <a href="#menu" class="back-link">← Retour au menu</a>
+            <h1>Les gâteaux</h1>
+            <p>Gâteaux personnalisés, gâteaux d'événements et créations signées de la maison.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="shelf">
+                <h2 class="shelf-title">Gâteaux personnalisés</h2>
+                <div class="shelf-row">
+                    <article class="product">
+                        <div class="media ">
+                    <img src="les images/Gâteau personnalise 1.png" alt="">
+                </div>
+                        <div class="product-body">
+                            <h3>Gâteau licorne</h3>
+                            <p>Couleurs pastel et décors modelés à la main.</p>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="media ">
+                   <img src="les images/Gâteau d’anniversaire pastel avec ourson couronné.png" alt="">
+                </div>
+                        <div class="product-body">
+                            <h3>Gâteau thème enfant</h3>
+                            <p>Personnages et univers préférés des enfants.</p>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="media ">
+                    <img src="c:\Users\Elhassan\Downloads\Gâteau d’anniversaire photo gourmand.png" alt="">
+                </div>
+                        <div class="product-body">
+                            <h3>Gâteau photo comestible</h3>
+                            <p>Votre photo imprimée sur un support comestible.</p>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="media ">
+                    <img src="c:\Users\Elhassan\Downloads\Gâteau ourson couronné pour anniversaire.png" alt="">
+                </div>
+                        <div class="product-body">
+                            <h3>Gâteau 3D sculpté</h3>
+                            <p>Objets, personnages ou animaux sculptés en volume.</p>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="media ">
+                    <img src="c:\Users\Elhassan\Downloads\Gâteau gourmand 30 ans fleuri.png" alt="">
+                    
+                </div>
+                        <div class="product-body">
+                            <h3>Gâteau chiffres & lettres</h3>
+                            <p>None</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="shelf-board"></div>
+            </div>
+
+            <div class="shelf">
+                <h2 class="shelf-title">Gâteaux d'événements</h2>
+                <div class="shelf-row">
+                    <article class="product">
+                        <div class="media ">
+                    <img src="c:\Users\Elhassan\Downloads\Gemini_Generated_Image_ykfjbiykfjbiykfj.jpg" alt="">
+                </div>
+                        <div class="product-body">
+                            <h3>Gâteau de mariage à étages</h3>
+                            <p>Deux ou trois étages décorés de fleurs en sucre, saveurs au choix.</p>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="media ">
+                    <img src="c:\Users\Elhassan\Downloads\Gemini_Generated_Image_sr00ynsr00ynsr00.jpg" alt="">
+                </div>
+                        <div class="product-body">
+                            <h3>Gâteau de fiançailles</h3>
+                            <p>Un gâteau élégant aux couleurs de votre cérémonie.</p>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="media ">
+                    <img src="c:\Users\Elhassan\Downloads\Gemini_Generated_Image_j4vfgmj4vfgmj4vf.jpg" alt="">
+                        </div>
+                        <div class="product-body">
+                            <h3>Pièce montée sucrée</h3>
+                            <p>Assortiment dressé en pyramide pour vos grandes réceptions.</p>
+                        </div>
+                    </article>
+                    
+               
+                
+                    <article class="product">
+                        <div class="media ">
+                    <img src="c:\Users\Elhassan\Downloads\Gemini_Generated_Image_p03alfp03alfp03a.jpg" alt="">
+                </div>
+                        <div class="product-body">
+                            <h3>Gâteau de naissance</h3>
+                            <p>Pour baby shower ou gender reveal, tout en douceur.</p>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="media ">
+                    <img src="c:\Users\Elhassan\Downloads\Gemini_Generated_Image_l28gmyl28gmyl28g.jpg" alt="">
+                </div>
+                        <div class="product-body">
+                            <h3>Gâteau d'entreprise</h3>
+                            <p>Logo et couleurs de votre société, pour vos événements.</p>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="media ">
+                    <img src="c:\Users\Elhassan\Downloads\Élégance et célébration en gâteaux.png" alt="">
+                </div>
+                        <div class="product-body">
+                            <h3>Gâteau de remise de diplôme</h3>
+                            <p>Un gâteau pour célébrer votre réussite.</p>
+                        </div>
+                    </article>
+                    
+                </div>
+                <div class="shelf-board"></div>
+            </div>
+
+            <div class="shelf">
+                <h2 class="shelf-title">Gâteaux de nos créations</h2>
+                <div class="shelf-row">
+                    <article class="product">
+                        <div class="media ">
+                    <img src="c:\Users\Elhassan\Downloads\Entremets mangue passion gourmand.png" alt="">
+                </div>
+                        <div class="product-body">
+                            <h3>L'Entremets mangue-passion</h3>
+                            <p>Mousse à la mangue, insert fruit de la passion et glaçage miroir.</p>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="media ">
+                    <img src="c:\Users\Elhassan\Downloads\Fraisier élégant aux fraises et fleurs.png" alt="">
+                </div>
+                        <div class="product-body">
+                            <h3> Le Fraisier</h3>
+                            <p>Génoise moelleuse, crème mousseline à la vanille et fraises fraîches.</p>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="media ">
+                    <img src="c:\Users\Elhassan\Downloads\Entremets chocolat noisette élégant.png" alt="">
+                </div>
+                        <div class="product-body">
+                            <h3>Entremets chocolat-noisette</h3>
+                            <p>Mousse chocolat, croustillant praliné et glaçage miroir.</p>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="media ">
+                    <img src="c:\Users\Elhassan\Downloads\Gâteau aux fruits rouges et crème élégante.png" alt="">
+                </div>
+                        <div class="product-body">
+                            <h3>Layer cake fruits rouges</h3>
+                            <p>Biscuit moelleux, crème légère et coulis de fruits rouges.</p>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="media ">
+                    <img src="c:\Users\Elhassan\Downloads\Gâteau caramel gourmand A.P.E Pâtisserie.png" alt="">
+                </div>
+                        <div class="product-body">
+                            <h3>Drip cake caramel</h3>
+                            <p>Coulures de caramel et décoration gourmande.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="shelf-board"></div>
+            </div>
+        </div>
+    </section>
+
+    
+    </main>
+
+    <!-- ================= PAGE : Pâtisserie traditionnelle marocaine ================= -->
+    <main class="page" id="page-patisserie-marocaine" data-title="Pâtisserie traditionnelle marocaine">
+    <section class="page-hero">
+        <div class="container">
+            <a href="#menu" class="back-link">← Retour au menu</a>
+            <h1>Pâtisserie traditionnelle marocaine</h1>
+            <p>Des recettes transmises de génération en génération, préparées avec des amandes, du miel et de la fleur d'oranger.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="shelf">
+                <h2 class="shelf-title">Biscuits &amp; sablés</h2>
+                <div class="shelf-row">
+                    <article class="product">
+                        <div class="media ">
+                    <img src="c:\Users\Elhassan\Downloads\Cornes de gazelle au thé marocain.png" alt="">
+                </div>
+                        <div class="product-body">
+                            <h3>Cornes de gazelle</h3>
+                            <p>Pâte fine fourrée à la pâte d'amandes parfumée à la fleur d'oranger.</p>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="media ">
+                    <img src="c:\Users\Elhassan\Downloads\Ghriba aux amandes sur plateau doré.png" alt="">
+                </div>
+                        <div class="product-body">
+                            <h3>Ghriba aux amandes</h3>
+                            <p>Biscuit moelleux au centre et craquelé en surface.</p>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="media ">
+                    <img src="c:\Users\Elhassan\Downloads\Ghriba coco et thé à la menthe.png" alt="">
+                </div>
+                        <div class="product-body">
+                            <h3>Ghriba à la noix de coco</h3>
+                            <p>Une version fondante, parfumée à la noix de coco.</p>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="media ">
+                    <img src="c:\Users\Elhassan\Downloads\Fekkas aux amandes sur plateau doré.png" alt="">
+                </div>
+                        <div class="product-body">
+                            <h3>Fekkas</h3>
+                            <p>Biscuits croustillants aux amandes et aux graines d'anis.</p>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="media ">
+                    <img src="c:\Users\Elhassan\Downloads\Sablés à la confiture et thé doré.png" alt="">
+                </div>
+                        <div class="product-body">
+                            <h3>Sablés à la confiture</h3>
+                            <p>Petits sablés fondants garnis de confiture maison.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="shelf-board"></div>
+            </div>
+
+            <div class="shelf">
+                <h2 class="shelf-title">Miel &amp; amandes</h2>
+                <div class="shelf-row">
+                    <article class="product">
+                        <div class="media ">
+                    <img src="c:\Users\Elhassan\Downloads\Chebakia marocaine au miel et sésame.png" alt="">
+                </div>
+                        <div class="product-body">
+                            <h3>Chebakia</h3>
+                            <p>Pâtisserie frite au sésame, enrobée de miel.</p>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="media ">
+                    <img src="c:\Users\Elhassan\Downloads\Briouats aux amandes et thé à la menthe.png" alt="">
+                </div>
+                        <div class="product-body">
+                            <h3>Briouates aux amandes</h3>
+                            <p>Feuilles croustillantes farcies d'amandes, trempées dans le miel.</p>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="media ">
+                    <img src="c:\Users\Elhassan\Downloads\Mhancha dorée au thé à la menthe.png" alt="">
+                </div>
+                        <div class="product-body">
+                            <h3>Mhancha</h3>
+                            <p>Pâte feuilletée enroulée en serpent, fourrée à la crème d'amandes.</p>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="media ">
+                    <img src="c:\Users\Elhassan\Downloads\Baklava marocaine aux pistaches et amandes.png" alt="">
+                </div>
+                        <div class="product-body">
+                            <h3>Baklava marocaine</h3>
+                            <p>Fine pâte feuilletée, amandes et sirop au miel.</p>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="media ">
+                    <img src="c:\Users\Elhassan\Downloads\Makrouts dorés au thé marocain.png" alt="">
+                </div>
+                        <div class="product-body">
+                            <h3>Makrout</h3>
+                            <p>Losanges de semoule fourrés aux dattes.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="shelf-board"></div>
+            </div>
+
+            <div class="shelf">
+                <h2 class="shelf-title">Plateaux &amp; fêtes</h2>
+                <div class="shelf-row">
+                    <article class="product">
+                        <div class="media ">
+                    <img src="c:\Users\Elhassan\Downloads\Sellou marocain aux amandes et au thé à la menthe.png" alt="">
+                </div>
+                        <div class="product-body">
+                            <h3>Sellou (sfouf)</h3>
+                            <p>Mélange traditionnel de farine grillée, amandes et sésame.</p>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="media ">
+                    <img src="c:\Users\Elhassan\Downloads\Délice doré de zlabia au thé à la menthe.png" alt="">
+                </div>
+                        <div class="product-body">
+                            <h3>Zlabia</h3>
+                            <p>Spirales croustillantes enrobées de sirop.</p>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="media ">
+                    <img src="c:\Users\Elhassan\Downloads\Festin marocain de pâtisseries dorées.png" alt="">
+                </div>
+                        <div class="product-body">
+                            <h3>Plateau de fêtes assorti</h3>
+                            <p>Sélection de pâtisseries pour l'Aïd et les réceptions.</p>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="media ">
+                    <img src="c:\Users\Elhassan\Downloads\Dattes farcies sur plateau doré.png" alt="">
+                </div>
+                        <div class="product-body">
+                            <h3>Dattes farcies</h3>
+                            <p>Dattes garnies de pâte d'amandes.</p>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="media ">
+                    <img src="c:\Users\Elhassan\Downloads\Pyramide de boules coco-amandes dorées.png" alt="">
+                </div>
+                        <div class="product-body">
+                            <h3>Boules coco-amandes</h3>
+                            <p>Petites bouchées gourmandes à la noix de coco.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="shelf-board"></div>
+            </div>
+        </div>
+    </section>
+
+    
+    </main>
+
+    <!-- ================= PAGE : Douceurs &amp; Délices ================= -->
+    <main class="page" id="page-douceurs-delices" data-title="Douceurs &amp; Délices">
+    <section class="page-hero">
+        <div class="container">
+            <a href="#menu" class="back-link">← Retour au menu</a>
+            <h1>Douceurs &amp; Délices</h1>
+            <p>Cupcakes, cheesecakes et macarons : des douceurs individuelles à partager ou à offrir.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="shelf">
+                <h2 class="shelf-title">Cupcakes</h2>
+                <div class="shelf-row">
+                    <article class="product">
+                        <div class="media ">
+                    <img src="c:\Users\Elhassan\Downloads\Cupcakes vanille et thé doré.png" alt="">
+                </div>
+                        <div class="product-body">
+                            <h3>Cupcake vanille</h3>
+                            <p>Gâteau moelleux et crème légère à la vanille.</p>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="media ">
+                    <img src="c:\Users\Elhassan\Downloads\Délices chocolatés sur marbre doré.png" alt="">
+                </div>
+                        <div class="product-body">
+                            <h3>Cupcake chocolat</h3>
+                            <p>Cœur fondant et glaçage chocolat.</p>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="media ">
+                    <img src="c:\Users\Elhassan\Downloads\Cupcakes Red Velvet de la Pâtisserie.png" alt="">
+                </div>
+                        <div class="product-body">
+                            <h3>Cupcake red velvet</h3>
+                            <p>Texture veloutée et crème au fromage.</p>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="media ">
+                    <img src="c:\Users\Elhassan\Downloads\Cupcakes citron, douceur pâtissière lumineuse.png" alt="">
+                </div>
+                        <div class="product-body">
+                            <h3>Cupcake citron</h3>
+                            <p>Frais et acidulé, avec un glaçage au citron.</p>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="media ">
+                    <img src="c:\Users\Elhassan\Downloads\Cupcakes aux framboises de la pâtisserie A.P.E.png" alt="">
+                </div>
+                        <div class="product-body">
+                            <h3>Cupcake framboise</h3>
+                            <p>Garni d'un cœur de framboise.</p>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="media ">
+                    <img src="c:\Users\Elhassan\Downloads\Cupcakes caramel et douceur pâtissière.png" alt="">
+                </div>
+                        <div class="product-body">
+                            <h3>Cupcake caramel beurre salé</h3>
+                            <p>Cœur de caramel et crème onctueuse.</p>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="media ">
+                    <img src="c:\Users\Elhassan\Downloads\Cupcakes pistache, douceur dorée.png" alt="">
+                </div>
+                        <div class="product-body">
+                            <h3>Cupcake pistache</h3>
+                            <p>Crème légère parfumée à la pistache.</p>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="media ">
+                    <img src="c:\Users\Elhassan\Downloads\Douceurs Pâtissières aux Mille Couleurs.png" alt="">
+                </div>
+                        <div class="product-body">
+                            <h3>Mini-cupcakes assortis</h3>
+                            <p>Petits cupcakes aux saveurs variées, parfaits pour les buffets.</p>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="media ">
+                    <img src="c:\Users\Elhassan\Downloads\Coffret gourmand A.P.E Pâtisserie.png" alt="">
+                </div>
+                        <div class="product-body">
+                            <h3>Boîte cadeau de cupcakes</h3>
+                            <p>Une sélection de cupcakes dans un joli coffret à offrir.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="shelf-board"></div>
+            </div>
+
+            <div class="shelf">
+                <h2 class="shelf-title">Cheesecakes</h2>
+                <div class="shelf-row">
+                    <article class="product">
+                        <div class="media ">
+                    <img src="c:\Users\Elhassan\Downloads\Cheesecake aux fruits rouges et menthe.png" alt="">
+                </div>
+                        <div class="product-body">
+                            <h3>Cheesecake New York</h3>
+                            <p>Le grand classique, crémeux sur un fond de biscuit.</p>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="media ">
+                    <img src="c:\Users\Elhassan\Downloads\Cheesecake aux fruits rouges et menthe (1).png" alt="">
+                </div>
+                        <div class="product-body">
+                            <h3>Cheesecake fruits rouges</h3>
+                            <p>Nappage de fruits rouges frais.</p>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="media ">
+                    <img src="c:\Users\Elhassan\Downloads\Cheesecake Oreo gourmand en vitrine pâtissière.png" alt="">
+                </div>
+                        <div class="product-body">
+                            <h3>Cheesecake Oreo</h3>
+                            <p>Biscuits chocolatés et crème onctueuse.</p>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="media ">
+                    <img src="c:\Users\Elhassan\Downloads\Cheesecake speculoos, douceur dorée.png" alt="">
+                </div>
+                        <div class="product-body">
+                            <h3>Cheesecake spéculoos</h3>
+                            <p>Fond croustillant aux épices douces.</p>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="media ">
+                    <img src="c:\Users\Elhassan\Downloads\Cheesecake pistache gourmand A.P.E. Pâtisserie.png" alt="">
+                </div>
+                        <div class="product-body">
+                            <h3>Cheesecake pistache</h3>
+                            <p>Crème parfumée à la pistache.</p>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="media ">
+                    <img src="c:\Users\Elhassan\Downloads\Mini cheesecakes gourmands et élégants.png" alt="">
+                </div>
+                        <div class="product-body">
+                            <h3>Mini-cheesecakes</h3>
+                            <p>Petites portions individuelles aux parfums assortis.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="shelf-board"></div>
+            </div>
+
+            <div class="shelf">
+                <h2 class="shelf-title">Macarons</h2>
+                <div class="shelf-row">
+                    <article class="product">
+                        <div class="media ">
+                    <img src="c:\Users\Elhassan\Downloads\Macarons vanille, douceur de la pâtisserie.png" alt="">
+                </div>
+                        <div class="product-body">
+                            <h3>Macarons vanille</h3>
+                            <p>Coques croquantes et ganache onctueuse à la vanille.</p>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="media ">
+                    <img src="c:\Users\Elhassan\Downloads\Macarons chocolatés sur marbre doré.png" alt="">
+                </div>
+                        <div class="product-body">
+                            <h3>Macarons chocolat</h3>
+                            <p>Ganache intense au chocolat noir.</p>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="media ">
+                    <img src="c:\Users\Elhassan\Downloads\Macarons framboise sur marbre rose.png" alt="">
+                </div>
+                        <div class="product-body">
+                            <h3>Macarons framboise</h3>
+                            <p>Une touche acidulée de framboise.</p>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="media ">
+                    <img src="c:\Users\Elhassan\Downloads\Macarons pistache, douceur pastel et dorée.png" alt="">
+                </div>
+                        <div class="product-body">
+                            <h3>Macarons pistache</h3>
+                            <p>Crème parfumée à la pistache.</p>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="media ">
+                    <img src="c:\Users\Elhassan\Downloads\Écrin gourmand de macarons A.P.E. Pâtisserie.png" alt="">
+                </div>
+                        <div class="product-body">
+                            <h3>Boîte de macarons assortis</h3>
+                            <p>Un assortiment de saveurs dans un coffret à offrir.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="shelf-board"></div>
+            </div>
+        </div>
+    </section>
+
+    
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h3>Notre Plaisir</h3>
+                <p>Pâtisserie fine &amp; Cake Design.<br>Maroc</p>
+            </div>
+            <div>
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#offres">Offres &amp; réductions</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#nouveautes">Nouveautés</a></li>
+                    <li><a href="#contact">Contactez-nous</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <p>Téléphone : +212 6 00 00 00 00</p>
+                <p>Email : contact@exemple.ma</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Notre Plaisir — Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+    /* Site en un seul fichier :
+       - les 5 sections principales (accueil, offres, menu, nouveautes, contact) sont affichées l'une sous l'autre ;
+       - un clic sur un lien du menu fait défiler jusqu'à la section (CSS : scroll-behavior + scroll-margin-top) ;
+       - un clic sur une carte du menu ouvre la page produits correspondante (les 5 sections sont alors masquées) ;
+       - pendant le défilement, le lien du menu de la section visible est mis en évidence. */
+    (function () {
+        var site = document.getElementById('site-principal');
+        var subPages = document.querySelectorAll('.page');
+        var blocks = document.querySelectorAll('.block');
+        var toggle = document.getElementById('nav-toggle');
+        var links = document.querySelectorAll('.navbar .nav-links a');
+        var spyOn = true;
+
+        function setCurrent(id) {
+            links.forEach(function (a) {
+                if (a.getAttribute('href') === '#' + id) a.setAttribute('aria-current', 'page');
+                else a.removeAttribute('aria-current');
+            });
+        }
+
+        function route() {
+            var id = location.hash.replace('#', '');
+            var sub = document.getElementById('page-' + id);
+            if (toggle) toggle.checked = false;
+
+            if (sub) {                                   /* page produits */
+                site.classList.add('site-hidden');
+                subPages.forEach(function (p) { p.classList.toggle('active', p === sub); });
+                setCurrent('menu');
+                document.title = sub.getAttribute('data-title') + ' — Notre Plaisir';
+                window.scrollTo(0, 0);
+                spyOn = false;
+            } else {                                     /* sections principales */
+                site.classList.remove('site-hidden');
+                subPages.forEach(function (p) { p.classList.remove('active'); });
+                spyOn = true;
+                var target = document.getElementById(id);
+                if (target && target.classList.contains('block')) target.scrollIntoView();
+                else window.scrollTo(0, 0);
+            }
+        }
+
+        /* Surbrillance du lien actif pendant le défilement */
+        if ('IntersectionObserver' in window) {
+            var io = new IntersectionObserver(function (entries) {
+                if (!spyOn) return;
+                entries.forEach(function (e) {
+                    if (e.isIntersecting) {
+                        setCurrent(e.target.id);
+                        document.title = e.target.getAttribute('data-title') + ' — Notre Plaisir';
+                    }
+                });
+            }, { rootMargin: '-40% 0px -55% 0px' });
+            blocks.forEach(function (b) { io.observe(b); });
+        }
+
+        window.addEventListener('hashchange', route);
+        route();
+    })();
+    </script>
+
+</body>
+</html>

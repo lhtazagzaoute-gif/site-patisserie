@@ -1,0 +1,263 @@
+/* ================= Variables (modifiez ici pour changer l'apparence du site) ================= */
+:root {
+    --bg-main: #FFFDFB;
+    --bg-secondary: #F7F1EB;
+    --primary-color: #B8866B;
+    --primary-dark: #9A6B52;
+    --text-dark: #2E2927;
+    --text-muted: #6E6561;
+    --white: #FFFFFF;
+    --placeholder: #EAE0D5;
+    --shelf: #CDB39A;
+    --border-radius: 8px;
+    --font-title: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+}
+
+/* ================= Réinitialisation ================= */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+h1, h2, h3 { font-family: var(--font-title); line-height: 1.2; }
+:focus-visible { outline: 2px solid var(--primary-dark); outline-offset: 3px; }
+
+.container { max-width: 1140px; margin: 0 auto; padding: 0 20px; }
+
+/* ================= Barre de navigation ================= */
+.navbar {
+    background-color: var(--white);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.nav-container { display: flex; justify-content: space-between; align-items: center; height: 75px; }
+.logo { font-family: var(--font-title); font-size: 1.9rem; font-weight: 700; color: var(--primary-color); }
+.nav-links { display: flex; align-items: center; gap: 26px; }
+.nav-links a { font-size: 0.95rem; font-weight: 500; transition: color 0.3s; }
+.nav-links a:hover, .nav-links a[aria-current="page"] { color: var(--primary-color); }
+.btn-nav { background-color: var(--primary-color); color: var(--white) !important; padding: 8px 18px; border-radius: var(--border-radius); }
+.nav-links a.btn-nav:hover, .nav-links a.btn-nav[aria-current="page"] { background-color: var(--primary-dark); color: var(--white); }
+
+/* Bouton menu mobile (sans JavaScript) */
+.nav-toggle { position: absolute; opacity: 0; pointer-events: none; }
+.nav-burger { display: none; cursor: pointer; width: 28px; height: 20px; position: relative; }
+.nav-burger span, .nav-burger span::before, .nav-burger span::after {
+    content: ""; position: absolute; left: 0; width: 100%; height: 2px; background: var(--text-dark); transition: 0.3s;
+}
+.nav-burger span { top: 9px; }
+.nav-burger span::before { top: -8px; }
+.nav-burger span::after { top: 8px; }
+.nav-toggle:focus-visible + .nav-burger { outline: 2px solid var(--primary-dark); outline-offset: 4px; }
+
+/* ================= Accueil (hero) ================= */
+
+.hero {
+    background-color: var(--bg-secondary);
+    padding: 100px 0;
+    text-align: center;
+
+    /* Image de fond */
+    background-image:
+        linear-gradient(
+            rgba(255, 253, 251, 0.30),
+            rgba(255, 253, 251, 0.30)
+        ),
+        url("les images/accueil-fond.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-content { max-width: 720px; }
+.subtitle { display: inline-block; font-size: 0.95rem; letter-spacing: 1px; color: var(--primary-color); font-weight: 600; margin-bottom: 12px; }
+.hero h1 { font-size: 3.2rem; margin-bottom: 20px; }
+.hero p { font-size: 1.1rem; color: var(--text-muted); margin-bottom: 32px; }
+.hero-buttons { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
+
+.btn-primary, .btn-secondary {
+    display: inline-block; padding: 12px 26px; border-radius: var(--border-radius);
+    font-weight: 600; font-size: 1rem; font-family: inherit; transition: all 0.3s; cursor: pointer;
+}
+.btn-primary { background-color: var(--primary-color); color: var(--white); border: 1.5px solid var(--primary-color); }
+.btn-primary:hover { background-color: var(--primary-dark); border-color: var(--primary-dark); }
+.btn-secondary { border: 1.5px solid var(--primary-color); color: var(--primary-color); }
+.btn-secondary:hover { background-color: var(--primary-color); color: var(--white); }
+
+/* ================= En-tête des pages internes ================= */
+.page-hero { background-color: var(--bg-secondary); padding: 60px 0 50px; text-align: center; }
+.page-hero h1 { font-size: 2.8rem; margin-bottom: 10px; }
+.page-hero p { color: var(--text-muted); max-width: 640px; margin: 0 auto; }
+.back-link { display: inline-block; margin-bottom: 14px; color: var(--primary-color); font-weight: 600; font-size: 0.95rem; }
+.back-link:hover { color: var(--primary-dark); }
+
+/* ================= Sections ================= */
+.section { padding: 70px 0; }
+.bg-light { background-color: var(--bg-secondary); }
+.section-header { text-align: center; max-width: 600px; margin: 0 auto 50px; }
+.section-header h2 { font-size: 2.3rem; margin-bottom: 10px; }
+.section-header p { color: var(--text-muted); }
+
+/* ================= Emplacements d'images ================= */
+/* Quand vous ajoutez une <img> dans .media, supprimez le <span class="media-label"> */
+.media {
+    background-color: var(--placeholder);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--text-muted); font-weight: 500; text-align: center; padding: 10px;
+    overflow: hidden;
+}
+.media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.media:has(img) { padding: 0; }
+
+/* ================= Cartes (accueil, offres, menu, nouveautés) ================= */
+.grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+.grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); gap: 30px; }
+
+.card {
+    display: block;
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card-link-block:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.09); }
+.card .media { height: 220px; }
+.card-body { padding: 24px; }
+.card-body h3 { font-size: 1.5rem; margin-bottom: 10px; }
+.card-body p { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 16px; }
+.card-link { color: var(--primary-color); font-weight: 600; font-size: 0.95rem; }
+.card-link::after { content: " →"; }
+.card-link:hover { color: var(--primary-dark); }
+.card-link-block:hover .card-link { color: var(--primary-dark); }
+
+.badge {
+    display: inline-block; background-color: var(--bg-secondary); color: var(--primary-dark);
+    font-weight: 600; font-size: 0.85rem; padding: 4px 12px; border-radius: 20px; margin-bottom: 12px;
+}
+
+/* ================= Étagères de produits ================= */
+.shelf { margin-bottom: 60px; }
+.shelf:last-child { margin-bottom: 0; }
+.shelf-title { font-size: 1.9rem; margin-bottom: 18px; }
+.shelf-row {
+    display: flex;
+    gap: 18px;
+    overflow-x: auto;
+    scroll-snap-type: x proximity;
+    -webkit-overflow-scrolling: touch;
+    padding: 6px 4px 0;
+    margin: 0 -4px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--shelf) transparent;
+}
+.shelf-row::-webkit-scrollbar { height: 8px; }
+.shelf-row::-webkit-scrollbar-thumb { background: var(--shelf); border-radius: 4px; }
+.shelf-board {
+    height: 16px;
+    background: linear-gradient(to bottom, #DCC6B0, var(--shelf));
+    border-radius: 0 0 6px 6px;
+    box-shadow: 0 12px 18px -6px rgba(46, 41, 39, 0.18);
+}
+.product {
+    background-color: var(--white);
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    display: flex; flex-direction: column;
+    flex: 0 0 calc((100% - 72px) / 5);
+    min-width: 210px;
+    scroll-snap-align: start;
+}
+.product .media { aspect-ratio: 1 / 1; font-size: 0.85rem; }
+.product-body { padding: 14px 14px 18px; }
+.product-body h3 { font-size: 1.2rem; margin-bottom: 6px; }
+.product-body p { font-size: 0.88rem; color: var(--text-muted); line-height: 1.5; }
+
+/* ================= À propos ================= */
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+.about-text h2 { font-size: 2.3rem; margin-bottom: 16px; }
+.about-text p { color: var(--text-muted); margin-bottom: 20px; }
+.features-list li { margin-bottom: 10px; font-weight: 500; }
+.about-media { height: 350px; border-radius: var(--border-radius); }
+
+/* ================= Contact ================= */
+.contact-grid { display: grid; grid-template-columns: 1fr 1.3fr; gap: 50px; align-items: start; }
+.contact-info h2 { font-size: 2rem; margin-bottom: 16px; }
+.contact-info p { margin-bottom: 10px; color: var(--text-muted); }
+.contact-info strong { color: var(--text-dark); }
+.contact-info .note { margin-top: 20px; font-size: 0.92rem; }
+.contact-form {
+    background: var(--white); padding: 30px; border-radius: var(--border-radius);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); display: flex; flex-direction: column;
+}
+.contact-form label { font-weight: 600; font-size: 0.92rem; margin-bottom: 6px; }
+.contact-form input, .contact-form select, .contact-form textarea {
+    font-family: inherit; font-size: 1rem; padding: 10px 12px; margin-bottom: 16px;
+    border: 1.5px solid var(--placeholder); border-radius: var(--border-radius);
+    background: var(--bg-main); color: var(--text-dark);
+}
+.contact-form input:focus, .contact-form select:focus, .contact-form textarea:focus {
+    outline: none; border-color: var(--primary-color);
+}
+.contact-form button { align-self: flex-start; }
+
+/* ================= Pied de page ================= */
+.footer { background-color: #2E2927; color: #EAE0D5; padding-top: 60px; }
+.footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 40px; padding-bottom: 40px; }
+.footer h3, .footer h4 { color: var(--white); margin-bottom: 16px; }
+.footer h3 { font-size: 1.6rem; }
+.footer h4 { font-size: 1.05rem; font-family: inherit; }
+.footer p, .footer li { font-size: 0.95rem; margin-bottom: 8px; color: #C7BDB8; }
+.footer a:hover { color: var(--white); }
+.footer-bottom { border-top: 1px solid rgba(255, 255, 255, 0.1); text-align: center; padding: 20px 0; font-size: 0.85rem; }
+
+/* ================= Responsive ================= */
+@media (max-width: 860px) {
+    .nav-burger { display: block; }
+    .navbar nav {
+        position: absolute; top: 75px; left: 0; right: 0;
+        background: var(--white); box-shadow: 0 8px 14px rgba(0, 0, 0, 0.06);
+        display: none;
+    }
+    .nav-toggle:checked ~ nav { display: block; }
+    .nav-links { flex-direction: column; align-items: flex-start; gap: 0; padding: 10px 20px 20px; }
+    .nav-links li { width: 100%; }
+    .nav-links a { display: block; padding: 12px 0; }
+    .nav-links a.btn-nav { display: inline-block; margin-top: 8px; padding: 10px 18px; }
+    .nav-toggle:checked + .nav-burger span { background: transparent; }
+    .nav-toggle:checked + .nav-burger span::before { top: 0; transform: rotate(45deg); }
+    .nav-toggle:checked + .nav-burger span::after { top: 0; transform: rotate(-45deg); }
+}
+
+@media (max-width: 768px) {
+    .hero { padding: 70px 0; }
+    .hero h1 { font-size: 2.3rem; }
+    .page-hero h1 { font-size: 2.2rem; }
+    .about-grid, .contact-grid { grid-template-columns: 1fr; }
+    .grid-2 { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 560px) {
+    .product { min-width: 70%; }
+    .grid-3 { grid-template-columns: 1fr; }
+}
+
+/* ================= Structure du site en un seul fichier ================= */
+/* Sections principales : toutes visibles, l'une sous l'autre */
+.block { scroll-margin-top: 75px; }          /* compense la barre de navigation fixe */
+.site-hidden { display: none; }              /* masquées quand une page produits est ouverte */
+.block .page-hero { background: transparent; }
+#menu, #contact { background-color: var(--bg-secondary); }   /* alternance de fonds */
+#menu .page-hero, #contact .page-hero { padding-top: 70px; }
+#offres .page-hero, #nouveautes .page-hero { padding-top: 70px; }
+/* Pages produits : visibles seulement au clic */
+.page { display: none; }
+.page.active { display: block; }
